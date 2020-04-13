@@ -78,3 +78,17 @@ scrape_configs:
     
     static_configs:
          - targets: ['entrylevel.io:32769']
+
+  - job_name: 'postgres-exporter'
+
+    # Override the global default and scrape targets from this job every 5 seconds.
+    scrape_interval: 60s
+
+    dns_sd_configs:
+    - names:
+      - 'tasks.es-exporter'
+      type: 'A'
+      port: 5432
+    
+    static_configs:
+         - targets: ['45.79.227.175:5432']
