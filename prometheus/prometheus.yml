@@ -86,7 +86,7 @@ scrape_configs:
 
     dns_sd_configs:
     - names:
-      - 'tasks.es-exporter'
+      - 'tasks.postges-exporter'
       type: 'A'
       port: 5432
     
