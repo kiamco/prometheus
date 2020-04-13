@@ -62,5 +62,5 @@ scrape_configs:
       type: 'A'
       port: 9100
     
-#     static_configs:
-#          - targets: ['node-exporter:9100']
+    static_configs:
+         - targets: ['entrylevel.io:32768']
